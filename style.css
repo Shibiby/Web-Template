@@ -15,4 +15,10 @@
 body{
     font-family: "Roboto", sans-serif;
 }
-
+.navbar bg-light{
+    background-color: antiquewhite;
+}
+.navbar-brand img{
+    width: 10rem;
+    height: auto;
+}
