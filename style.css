@@ -16,6 +16,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* NAVBAR */
 .navbar-brand img{
     width: 10rem;
     height: auto;
@@ -40,6 +41,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
+
+/* FRONT UPPER PART */
 .front img{
     width: 768px;
 }
@@ -100,7 +103,7 @@ body{
       color: white;
   }
 
-  
+  /* PROJECTS */
   .projects{
       margin: 50px;
   }
@@ -146,4 +149,88 @@ body{
     background-color:black;
     font-size: 12px;
     color: white;
+}
+
+/* CONTACT */
+.contact{
+    margin: 50px;
+}
+.contact .col-md-12{
+  -moz-box-shadow: 10px 1px 15px rgba(68,68,68,0.6);
+  -webkit-box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
+  box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+  height: auto;
+  background-color: #ffffff;
+  color: #000000;
+
+}
+.contact h1{
+  font-family: forte;
+  padding-top: 20px;
+  font-weight: bolder;
+  border-bottom: double 3px;
+
+}
+
+.contact .mfm-btn{
+  text-align: center;
+  min-width: 200px;
+  height: 60px;
+  border: 1px solid;
+  border-color: #000000;
+  text-transform: uppercase;
+  color:black;
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  border-radius: 0;
+  line-height: 64px;
+  padding: 0;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.mfm-btn:hover, .mfm-btn:focus {
+  background-color:black;
+  font-size: 12px;
+  color: white;
+}
+
+.
+.mfm-btn:hover, .mfm-btn:focus {
+    background-color:black;
+    font-size: 12px;
+    color: white;
+}
+form-group{
+    font-family: fantasy;
+    color: black;
+}
+
+.contact-form .form-group {
+    margin-bottom: 3px;
+    text-align: center;
+    color: black;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  height: 40px;
+  padding: 5px 15px;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: #c0c0c0;
+  border-radius: 0;
+  font-size: 12px;
+  font-style: italic;
+  color: black;
+  background-color: transparent;
+    text-align: center;
+}
+
+  .contact-form .form-control:focus, .contact-form .form-control:hover {
+    box-shadow: none;
 }

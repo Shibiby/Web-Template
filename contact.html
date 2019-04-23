@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>M_Shibiby | Home</title>
+    <link rel="icon" href="img/title.png">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #ffffff">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartop" aria-controls="#navbartop" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navbartop">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html"><i class="fa fa-user"></i> About</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="services.html"><i class="fa fa-cog"></i> Services</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="projects.html"><i class="fa fa-archive"></i> Projects</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
+                </li>
+
+            </ul>
+        </div>
+        </nav>
+
+        <div class="contact">
+                <div class="col-md-12 text-center">
+                    <h1>FEEL FREE TO CONTACT ME</h1>
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+                        <div class="form-group">
+                            <label for="form_name">Firstname *</label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="form_lastname">Lastname *</label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>                
+                                
+                        <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        
+                        
+                            <div class="form-group">
+                                <label for="form_need">Please specify your need *</label>
+                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                    <option value=""></option>
+                                    <option value="Request quotation">Request quotation</option>
+                                    <option value="Request order status">Request order status</option>
+                                    <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>            
+                                        
+                            <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn mfm-btn btn-send" value="Send message">
+                                    </div>
+                                </div>
+                                    
+                            </div>
+        
+                        </form>
+                </div>
+            </div>
+
+
+        <script src="custom.js"></script>
+        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+    </body>
+    </html>
