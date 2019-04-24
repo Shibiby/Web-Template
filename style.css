@@ -307,7 +307,7 @@ form-group{
 	list-style-position: outside;
 	display: block;
 	height:50px;
-	width: 40px;
+	width: 35px;
 	position: relative;
 }
 	.quick-link.count-1{
@@ -318,7 +318,7 @@ form-group{
 	background: #fff;
 	background: rgba(255, 255, 255, 0.15);
 	height: 50px;
-	width: 40px;
+	width: 35px;
 	display: block;
 	text-align: center;
 	font-size: 22px;
