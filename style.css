@@ -313,7 +313,6 @@ form-group{
 	.quick-link.count-1{
 		margin-top: -100px; /* 48*6/2*/
 	}
-/* 3.2 Links */
 .quick-link a{
 	background: #fff;
 	background: rgba(255, 255, 255, 0.15);
@@ -390,7 +389,7 @@ form-group{
 		-webkit-transform: none;
 		transform: none;
 		display: block;
-		opacity: 1;
+		opacity: 5;
 		visibility: visible;
 	}
 
