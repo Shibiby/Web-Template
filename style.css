@@ -166,6 +166,7 @@ body{
 /* CONTACT */
 .contact{
     margin: 50px;
+    margin-top: 0;
 }
 .contact .col-md-12{
   -moz-box-shadow: 10px 1px 15px rgba(68,68,68,0.6);
@@ -416,7 +417,7 @@ form-group{
         background-color: #000000; /* Set a background color */
         color: white; /* Text color */
         cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 15px; /* Some padding */
+        padding: 5px; /* Some padding */
         border-radius: 50px; /* Rounded corners */
         font-size: 18px; /* Increase font size */
       }
