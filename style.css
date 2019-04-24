@@ -306,7 +306,7 @@ form-group{
     background-color: black;
 }
 
-.quick-link{
+.left-nav{
 	position: fixed;
 	top: 50%;
 	left: 0;
@@ -315,7 +315,7 @@ form-group{
 	z-index: 100;
 	margin-top: -96px; /* 48*4/2*/
 }
-.quick-link li{
+.left-nav li{
 	list-style: none;
 	list-style-position: outside;
 	display: block;
@@ -323,10 +323,10 @@ form-group{
 	width: 35px;
 	position: relative;
 }
-	.quick-link.count-1{
-		margin-top: -100px; /* 48*6/2*/
+	.left-nav.fixed{
+		margin-top: -100px; 
 	}
-.quick-link a{
+.left-nav a{
 	background: #fff;
 	background: rgba(255, 255, 255, 0.15);
 	height: 50px;
@@ -342,11 +342,11 @@ form-group{
 	-webkit-transition: 0.2s;
 	transition: 0.2s;
 }
-.quick-link ul li{
+.left-nav ul li{
 	position: relative;
 }
-.quick-link ul li:after,
-.quick-link a:after{
+.left-nav ul li:after,
+.left-nav a:after{
 	position: absolute;
 	content: "";
 	background: rgba(255,255,255,0);
@@ -362,8 +362,8 @@ form-group{
 	transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
 	z-index: -1;
 }
-.quick-link ul li.active:after,
-.quick-link a:hover:after{
+.left-nav ul li.active:after,
+.left-nav a:hover:after{
 	-webkit-transform: none;
 	transform: none;
 	border-radius: 0;
@@ -372,14 +372,14 @@ form-group{
     color: #ffffff;
 }
 
-.quick-link ul li.active:after{
+.left-nav ul li.active:after{
 	background: rgba(230, 230, 230, 0.12);
 }
-.quick-link a.marked{
+.left-nav a.marked{
 	color: #fff;
 	background: black;
 }
-	.quick-link .title{
+	.left-nav .title{
 		position: absolute;
 		font-size: 12px;
 		left: 56px;
@@ -398,7 +398,7 @@ form-group{
 		visibility: hidden;
 		opacity: 0;
 	}
-	.quick-link li:hover .title{
+	.left-nav li:hover .title{
 		-webkit-transform: none;
 		transform: none;
 		display: block;
