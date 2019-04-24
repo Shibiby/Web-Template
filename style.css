@@ -116,8 +116,8 @@ body{
 	-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
     zoom: 1;
     height: auto;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #737373;
+    color: #ffffff;
 
   }
   .projects h1{
@@ -234,3 +234,49 @@ form-group{
   .contact-form .form-control:focus, .contact-form .form-control:hover {
     box-shadow: none;
 }
+
+/* FOOTER */
+.bottom{
+    -moz-box-shadow: 10px 1px 15px rgba(68,68,68,0.6);
+  -webkit-box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
+  box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+  height: auto;
+  background-color: #ffffff;
+  color: #000000;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.social{
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.fa{
+    color: #737373;
+    padding: 10px;
+}
+.fa:hover{
+    color: black;
+}
+
+.footer{
+    padding: 20px;
+    font-size: 2rem;
+}
+
+.footer a{
+    color: #000000;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: #737373;
+    background-color: black;
+}
+
