@@ -11,7 +11,9 @@ function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
     }
 
-    // When the user scrolls down 20px from the top of the document, show the button
+    
+//scroll up button    
+// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

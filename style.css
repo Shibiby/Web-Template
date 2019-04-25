@@ -27,32 +27,105 @@ body{
 }
 
 /* NAVBAR */
-.navbar-brand img{
-    width: 10rem;
-    height: auto;
+.left-nav{
+	position: fixed;
+	top: 50%;
+	left: 0;
+	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+	z-index: 100;
+	margin-top: -96px; /* 48*4/2*/
 }
-.navbar-brand img:hover{
-    width: 15rem;
+.left-nav li{
+	list-style: none;
+	list-style-position: outside;
+	display: block;
+	height:50px;
+	width: 35px;
+	position: relative;
 }
-.nav-item{
-    padding-left: 50px;
+	.left-nav.fixed{
+		margin-top: -100px; 
+	}
+.left-nav a{
+	background: #fff;
+	background: rgba(255, 255, 255, 0.15);
+	height: 50px;
+	width: 35px;
+	display: block;
+	text-align: center;
+	font-size: 22px;
+	padding-top: 0.4rem;
+	color:#000000;
+	opacity: 1;
+	position: relative;
+	z-index: 1;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+.left-nav ul li{
+	position: relative;
+}
+.left-nav ul li:after,
+.left-nav a:after{
+	position: absolute;
+	content: "";
+	background: rgba(255,255,255,0);
+	border-radius: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+/*		transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);*/
+	-webkit-transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+	z-index: -1;
+}
+.left-nav ul li.active:after,
+.left-nav a:hover:after{
+	-webkit-transform: none;
+	transform: none;
+	border-radius: 0;
+	background: rgba(255,255,255,0.15);
+    background:white;
+    color: #ffffff;
 }
 
-.navbar-light .nav-item .nav-link:hover,
-.navbar-light .nav-item .nav-link:focus{
-    color: white;
-    background-color: #737373;
+.left-nav ul li.active:after{
+	background: rgba(230, 230, 230, 0.12);
 }
-.navbar-light .nav-item .nav-link:hover .fa,
-.navbar-light .nav-item .nav-link:focus .fa{
-    color: white;
-    background-color: #737373;
+.left-nav a.marked{
+	color: #fff;
+	background: black;
 }
-.navbar-light .nav-item .nav-link{
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-}
+	.left-nav .title{
+		position: absolute;
+		font-size: 12px;
+		left: 56px;
+		top: 17px;
+        color: #000000;
+        background-color: #ffffff;
+		font-family: "Asap";
+		text-transform: uppercase;
+		text-align: left;
+		width: 70px;
+		border-bottom: 1px solid currentColor;
+		display: block;
+		transform: translateX(10px);
+		-webkit-transition: 0.3s;
+		transition: 0.3s;
+		visibility: hidden;
+		opacity: 0;
+	}
+	.left-nav li:hover .title{
+		-webkit-transform: none;
+		transform: none;
+		display: block;
+		opacity: 5;
+		visibility: visible;
+    }
 
 /* FRONT UPPER PART */
 .front img{
@@ -228,6 +301,7 @@ form-group{
     color: black;
 }
 
+
 .contact-form .form-control {
   width: 100%;
   height: 40px;
@@ -247,9 +321,10 @@ form-group{
     box-shadow: none;
 }
 
+/* Google Map */
 .googleMap{
     margin: 50px;
-    -moz-box-shadow: 10px 1px 15px rgba(68,68,68,0.6);
+    -moz-box-shadow: 10px 15px 15px rgba(68,68,68,0.6);
     -webkit-box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
     box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
   
@@ -282,6 +357,9 @@ form-group{
     padding-bottom: 20px;
     padding-top: 20px;
 }
+.footer p{
+    font-size: 12px;
+}
 
 .fa{
     color: #737373;
@@ -306,105 +384,7 @@ form-group{
     background-color: black;
 }
 
-.left-nav{
-	position: fixed;
-	top: 50%;
-	left: 0;
-	-webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
-	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
-	z-index: 100;
-	margin-top: -96px; /* 48*4/2*/
-}
-.left-nav li{
-	list-style: none;
-	list-style-position: outside;
-	display: block;
-	height:50px;
-	width: 35px;
-	position: relative;
-}
-	.left-nav.fixed{
-		margin-top: -100px; 
-	}
-.left-nav a{
-	background: #fff;
-	background: rgba(255, 255, 255, 0.15);
-	height: 50px;
-	width: 35px;
-	display: block;
-	text-align: center;
-	font-size: 22px;
-	padding-top: 0.4rem;
-	color:#000000;
-	opacity: 1;
-	position: relative;
-	z-index: 1;
-	-webkit-transition: 0.2s;
-	transition: 0.2s;
-}
-.left-nav ul li{
-	position: relative;
-}
-.left-nav ul li:after,
-.left-nav a:after{
-	position: absolute;
-	content: "";
-	background: rgba(255,255,255,0);
-	border-radius: 100%;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	-webkit-transform: scale(0.5);
-	transform: scale(0.5);
-/*		transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);*/
-	-webkit-transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-	transition: 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-	z-index: -1;
-}
-.left-nav ul li.active:after,
-.left-nav a:hover:after{
-	-webkit-transform: none;
-	transform: none;
-	border-radius: 0;
-	background: rgba(255,255,255,0.15);
-    background:white;
-    color: #ffffff;
-}
 
-.left-nav ul li.active:after{
-	background: rgba(230, 230, 230, 0.12);
-}
-.left-nav a.marked{
-	color: #fff;
-	background: black;
-}
-	.left-nav .title{
-		position: absolute;
-		font-size: 12px;
-		left: 56px;
-		top: 17px;
-        color: #000000;
-        background-color: #ffffff;
-		font-family: "Asap";
-		text-transform: uppercase;
-		text-align: left;
-		width: 70px;
-		border-bottom: 1px solid currentColor;
-		display: block;
-		transform: translateX(10px);
-		-webkit-transition: 0.3s;
-		transition: 0.3s;
-		visibility: hidden;
-		opacity: 0;
-	}
-	.left-nav li:hover .title{
-		-webkit-transform: none;
-		transform: none;
-		display: block;
-		opacity: 5;
-		visibility: visible;
-    }
     
     #myBtn {
         display: none; /* Hidden by default */
@@ -450,5 +430,19 @@ form-group{
     height: auto;
   }
 
-
-
+/* Card */
+  .row{
+  margin: 40px;
+  margin-top: 0;
+    -moz-box-shadow: 10px 1px 15px rgba(68,68,68,0.6);
+    -webkit-box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
+    box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
+  
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
+}
+.card-title{
+  border-bottom: double 3px;
+  font-size: 30px;
+}
