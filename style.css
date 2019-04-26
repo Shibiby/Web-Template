@@ -452,6 +452,10 @@ form-group{
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
   color: #000000;
+  height: auto;
+}
+.team2.col-md-8 h2{
+  border-bottom: double 3px;
 }
 
 .twitter-timeline{
