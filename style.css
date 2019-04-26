@@ -430,19 +430,38 @@ form-group{
     height: auto;
   }
 
-/* Card */
+/* team */
+
+  .team h1{
+    border-bottom: double 3px;
+  }
   .row{
-  margin: 40px;
-  margin-top: 0;
-    -moz-box-shadow: 10px 1px 15px rgba(68,68,68,0.6);
-    -webkit-box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
-    box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
-  
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-    zoom: 1;
-}
+    margin: 40px;
+  }
 .card-title{
   border-bottom: double 3px;
   font-size: 30px;
 }
+.team2.col-md-8{
+  -moz-box-shadow: 10px 1px 15px rgba(68,68,68,0.6);
+  -webkit-box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
+  box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
+  background-color: #737373;
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+  color: #000000;
+}
+
+.twitter-timeline{
+  -moz-box-shadow: 10px 1px 15px rgba(68,68,68,0.6);
+  -webkit-box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
+  box-shadow: 15px 15px 15px rgba(68,68,68,0.6);
+  background-color: #737373;
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+}
+
